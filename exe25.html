@@ -1,9 +1,188 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" style="font-family:'Comic Sans MS',cursive;">
+<meta content="width=device-width, initial-scale=1.0">
     <head>
-        initcommit
+        <h1 style="font-size:50px;"><u>Quiz ngoding untuk ngabuburit~ </u></h1>
+        <br>
+        <div style="font-size:larger;">
+            <b>RULES:</b>
+            <ol>
+                <li>
+                    Boleh menggunakan bahasa pemrograman apapun
+                </li>
+                <li>
+                    Boleh nanya apa aja kecuali nanya jawaban, boleh nanya ke siapapun kecuali ke AI (chatGPT, deepseek, etc). Kalau ketahuan curang: 🔴🙏🔵 👉🟣 🍩 💀
+                </li>
+                <li>
+                    Dianjurkan bekerja sama, tapi submit jawaban tetap masing2
+                </li>
+                <li>
+                    Tidak boleh mengerjakan soal bonus jika belum menyelesaikan yang mandatory
+                </li>
+                <li style="color: blue;">
+                    <b>REWARD</b> angpao lebaran jika mengerjakan quiz nya (nominalnya tergantung performance), dan bonus angpao apabila mengerjakan <b>BONUS</b> quiz!
+                </li>
+                <li style="color: red;">
+                    <b>DEADLINE:</b> sebelum lebaran (<b><code>If</code></b> submit setelah lebaran <b><code>then</code></b> angpao = <b><code>false</code></b> &#128521)
+                </li>
+                <li>
+                    <b>Good luck, have fun! &#128540</b>
+                    <br>
+                    [<code>signed by Gojo Satoru</code>] 
+                    <div class="tenor-gif-embed" data-postid="14813374835611323395" data-share-method="host" data-aspect-ratio="1" data-width="10%"><a href="https://tenor.com/view/gojo-gojo-satoru-satoru-gojo-jjk-jujutsu-kaisen-gif-14813374835611323395">Gojo Gojo Satoru GIF</a>from <a href="https://tenor.com/search/gojo-gifs">Gojo GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+                </li>
+            </ol>
+        </div>
     </head>
-    <body>
-
+    <body style="font-size: larger;">
+        <hr><hr>
+        <p><span style="font-family: fantasy;"> Gojo Satoru </span> adalah <i>the strongest chemist of today</i>, dia memiliki sebuah <a href="data_molekul.txt">database <b>tabular</b></a> berisi data beberapa ratus molekul. 
+        <br>    
+        Setiap baris (row) adalah deskripsi satu molekul, setiap molekul dideskripsikan oleh 4 kolom: <code>id, formula_molekul, kandungan_atom, energy</code>.
+        <br>
+        Database tersebut memiliki <code>500</code> molekul, dan hanya mengandung 5 tipe atom unik, yaitu: <code>(H)ydrogen, (C)arbon, (O)xygen, (N)itrogen, (F)luorine</code>.
+        <br>
+        <br>
+        Gojo-sensei hendak menginvestigasi/melakukan experimen menggunakan molekul2 yang ada di database tersebut, untuk meng-enhance <i>Limitless cursed technique</i> nya supaya bisa mengendalikan benda2 pada level atomic. Contoh: supaya bisa menembakkan <span style="color: purple;"><i>hollow purple</i></span> 🔴🙏🔵 👉🟣 tapi versi <i>sniper</i> karena peluru nya hanya sebesar 1 buah atom (bukan segede cannonball yang kaya biasa).
+        <br>
+        Pada keadaan normal, <b>mengolah data</b> seperti ini adalah hal mudah untuk Gojo-sensei dengan menggunakan <i>Six-Eyes</i> nya (Six-eyes mampu mengolah informasi sebesar leebih dari 10GB per second!). 
+        Namun, karena sekarang sedang puasa, karena tidak makan siang, Six-Eyes nya tidak berfungsi optimal, maka dari itu, <b>bantulah Gojo-sensei untuk mengolah database molekul tersebut!!1!</b>
+        <br><br>
+        <u>Berikut adalah beberapa request dari Gojo-sensei:</u>
+        </p>
+        <ol start="0">
+            <li>
+                <span style="color: blue;"><b>[Operasi file]</b></span> Load <a href="data_molekul.txt">database <b>tabular</b></a> tersebut menggunakan bahasa pemrograman yang disukai, kemudian tampilkan database tersebut di console/terminal!
+            </li>
+            <li>
+                <span style="color: blue;"><b>[Mengolah String]</b></span>
+                <ol type="a">
+                    <li>
+                        Buatlah sebuah fungsi program untuk menghitung jumlah atom yang terkandung dalam sebuah molekul, contoh:
+                        <br>
+                        <code style="color: blue;">
+                            Input: "HHO"
+                            <br>
+                            Output: 3
+                        </code>
+                    </li>
+                    <li>
+                        Buatlah sebuah fungsi program untuk menghitung masing2 jumlah atom tipe <code>H, C, O, N, F</code> dalam sebuah molekul, contoh:
+                        <br>
+                        <code style="color: blue;">
+                            Input: "HHCCNOH"
+                            <br>
+                            Output: {H:3, C:2, N:1, O:1, F:0}
+                        </code>
+                        <br>
+                        <u>Hint</u>: gunakan struktur data <a href="https://www.w3schools.com/python/python_dictionaries.asp">dictionary</a>! (semua bahasa punya dictionary, ga hanya Python)
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <span style="color: blue;"><b>[Sortir data]</b></span>
+                <ol type="a">
+                    <li>
+                        Gojo-sensei hendak mengetes tembakkan <span style="color: purple;"><i>hollow purple</i></span> mulai dari <b>size</b> molekul terkecil hingga terbesar. 
+                        <b>Size</b> sebuah molekul ditentukan dengan berapa banyak atom yang dikandungnya. Buatlah program untuk mengurutkan molekul2 di database nya berdasarkan <b>size</b> molekul, dari yang terkecil hingga yang terbesar!
+                        <br>
+                        Contoh:
+                        <br>
+                        <code style="color: blue;">
+                            Input: 
+                            <br>
+                            001  H2O   HHO ...
+                            <br>
+                            004 OH  HO  ...
+                            <br>
+                            010 CH  CH  ...
+                            <br>
+                            015 CH4 HHHHC   ...
+                            <br>
+                            ...
+                            <br><br>
+                            Output:
+                            <br>
+                            004 OH  HO  ... <br>
+                            010 CH  CH  ... <br>
+                            001  H2O   HHO ... <br>
+                            015 CH4 HHHHC   ... <br>
+                            ...
+                        </code>
+                        <br>
+                        <u>Hint</u>: bikin kolom baru di database nya, misal nama kolomnya adalah <code>mol_size</code>. Kemudian untuk setiap row (di-loop untuk semua row), isi <code>mol_size</code> menggunakan fungsi yang sudah dibuat di <b>[1a]</b>.
+                        Lalu urutkan database nya berdasarkan <code>mol_size</code>.
+                    </li>
+                    <li>
+                        Kemudian Gojo-sensei hendak meng-improve <i>Limitless: Infinity</i> nya, yaitu dia pengen bisa misahin <b>Hydrogen</b> dari atom2 yang lainnya (karena kalau Hydrogen kena block <i>infinty</i> nya juga, bisa berabe, artinya Gojo-sensei ga bisa nafas 💀 (anggap aja nafasnya pake Hydrogen, bukan Oxygen)).
+                        <br>
+                        Mirip seperti <b>[2a]</b>, buatlah program untuk mengurutkan database nya berdasarkan <b>jumlah atom Hydrogen (H)</b> yang dikandung setiap molekul!
+                        <br>
+                        <u>Hint</u>: sama dengan <b>[2a]</b>, bikin kolom baru misal <code>H_count</code>. Hitung jumlah <code>H</code> pakai fungsi di <b>[1b]</b> untuk semua molekul terus masukin ke kolom <code>H_count</code>.
+                        Terus urutin database nya dari molekul yang <code>H_count</code> nya paling kecil sampai yang paling besar.
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <b><span style="color: red;">{BONUS}</span>, <span style="color: blue;">[Aljabar Linear] [Machine Learning]</span></b>
+                <br>
+                Gojo-sensei hendak memprediksi sebarapa kuat kah <b><code>energy</code></b> <span style="color: purple;"><i>hollow purple</i></span> yang dibutuhkan untuk menembus <i>energy reinforcement</i> nya Sukuna.
+                <br> 
+                Nah untuk memprediksi besaran <b><code>energy</code></b> tersebut, diperlukan sebuah <i><a href="https://en.wikipedia.org/wiki/System_of_linear_equations">linear system of equations</a></i> untuk mencari nilai energy yang pas. 
+                Misal, <span style="color: red;">menggunakan <b>masing2 jumlah <code>H, C, N, O, F</code></b> pada setiap molekul sebagai <a href="https://en.wikipedia.org/wiki/Feature_(machine_learning)#:~:text=In%20machine%20learning%20and%20pattern,%2C%20classification%2C%20and%20regression%20tasks."> <i>feature</i> </a></span>.
+                Jumlah masing2 atom type tersebut kemudian disatukan kedalam sebuah matrix \(A_{n \times m}\), dimana \(n\) adalah jumlah molekul di dalam database, dan \(m\) adalah jumlah kolom <i>feature</i>.
+                <span style="color: red;"><b>Kemudian nilai dari kolom <code>energy</code> dari semua molekul disatukan kedalam sebuah vector \(b\) dengan size \(n\)</b></span>.
+                <br>
+                Untuk memprediksi nilai energy yang pas, maka diperlukan untuk mencari nilai sebuah koefisien vector <b>\(x\)</b> dengan perhitungan <b>Aljabar Linear</b> sebagai berikut:
+                    \[
+                        \begin{split}
+                            Ax &= b, \\
+                            A^{T}Ax &= A^{T}b, \\
+                            x &:= (A^{T}A)^{-1}A^Tb. \quad \text{(!)}\\
+                        \end{split}
+                    \]
+                Setelah mendapatkan nilai \(x\), maka Gojo-sensei bisa memprediksi seberapa besar energy yang dibutuhkan untuk <span style="color: purple;"><i>hollow purple</i></span>, yaitu:
+                    \[
+                        \hat{b} := Ax. \quad \text{(!)}
+                    \]
+                Kemudian, <b>error</b> prediksi <b><code>energy</code></b> bisa dihitung dengan:
+                    \[
+                        e := \|\hat{b} - b\|^2_2. \quad \text{(!)}
+                    \]
+                Buatlah program untuk menghitung berapa besar <b>error \(e\)</b> yang didapatkan Gojo-sensei dalam prediksi nilai <b><code>energy</code></b> !
+                <br>
+                <span style="color: red"><u>Hint 1</u></span>: \(n = 500, m = 5\).
+                <br>
+                <span style="color: red"><u>Hint 2</u></span>: Gunakan fungsi <b>[1b]</b> untuk menyusun matrix \(A\), contoh:
+                <br>
+                <code style="color: blue;">
+                    Data: <br>
+                    {H:2, C:1, O:3, N:0, F:0}, <br>
+                    {H:5, C:3, O:3, N:1, F:1}, <br>
+                    {H:10, C:1, O:2, N:0, F:0}, <br>
+                    {H:0, C:1, O:2, N:1, F:0}, <br>
+                </code>
+                Maka nilai matrix \(A\) adalah:
+                <br>
+                <code style="color: blue;">
+                    2   1   3   0   0 <br>
+                    5   3   3   1   1 <br>
+                    10  1   2   0   0 <br>
+                    0   1   2   1   0 <br> 
+                </code>
+                <span style="color: red"><u>Hint 3</u></span>: yang perlu dibuat code nya hanya formula yang diberi tanda "<b>(!)</b>"
+            </li>
+        </ol>
+        <br>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <hr><hr>
+        <u>Akhir kata</u>:
+        <br>
+        Dengan adanya quiz/exercise ini, harapannya bisa membantu memulai belajar programming berdasarkan kasus nyata (tidak hanya teori atau latihan dengan <i>dummy</i>). 
+        Semua soal2 yang tertera mencakup role yang <i>multi-discipline</i> sekaligus (untuk entry-level tentunya), terutama yang berkutat dengan data, baik itu <b>Data Analyst, Data Scientist, Data Engineer</b> atau <b>Computational Scientist</b>.
+        Rasanya di zaman sekarang skill untuk mengolah data itu sangat penting, semua <i>domain discipline</i> sekarang harus bisa mengolah data, bahkan berdagang pun kita harus bisa mengolah data.
+        Maka dari itu lah, terpikir ngebikin quiz ini. <s>Terutama yang berminat/berniat #KaburAjaDulu, ada baiknya untuk dilatih se-dini mungkin.</s> 
+        <br>
+        Semoga bermanfaat 😊
     </body>
 </html>
